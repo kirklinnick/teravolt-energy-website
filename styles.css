@@ -119,6 +119,7 @@ img {
 .btn-primary:hover {
   background: var(--accent-2);
   transform: translateY(-1px);
+  text-decoration: underline;
 }
 
 .btn-secondary {
@@ -129,6 +130,7 @@ img {
 
 .btn-secondary:hover {
   background: var(--surface-2);
+  text-decoration: underline;
 }
 
 .menu-btn {
@@ -189,17 +191,46 @@ img {
   letter-spacing: 0.08em;
 }
 
+a.pill:hover {
+  text-decoration: underline;
+}
+
 .card {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 22px;
   padding: 22px;
+}
+
+a.card {
+  display: block;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card:hover {
+a.card:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow);
+  text-decoration: underline;
+}
+
+.card-interactive {
+  border-left: 3px solid var(--accent);
+}
+
+.card-interactive .list-item:hover {
+  background: var(--line);
+}
+
+.card h2 {
+  font-size: 18px;
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 0 0 8px;
+  font-weight: 600;
 }
 
 .card img {
@@ -307,6 +338,10 @@ img {
   font-weight: 600;
   cursor: pointer;
   box-shadow: var(--shadow);
+}
+
+.help-fab:hover {
+  text-decoration: underline;
 }
 
 @keyframes fade-up {
