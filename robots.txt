@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kirklinnick.github.io/teravolt-energy-website/sitemap.xml
