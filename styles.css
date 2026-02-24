@@ -24,7 +24,7 @@ body {
   margin: 0;
   font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Segoe UI", sans-serif;
   color: var(--text);
-  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-mid) 40%, var(--bg-light) 100%);
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-mid) 30%, var(--bg-light) 55%, #1e3a5f 75%, #2a5080 100%);
   min-height: 100vh;
   letter-spacing: -0.01em;
 }
