@@ -1,13 +1,15 @@
 :root {
-  --bg: #f5f5f7;
-  --surface: #ffffff;
-  --surface-2: #f7f7f9;
-  --text: #1d1d1f;
-  --muted: #6e6e73;
-  --accent: #0071e3;
-  --accent-2: #0060d1;
-  --line: #e5e5e7;
-  --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  --bg: #0b1628;
+  --bg-mid: #111f3a;
+  --bg-light: #182848;
+  --surface: #1a2744;
+  --surface-2: #1e2f52;
+  --text: #eef1f6;
+  --muted: #8b95a8;
+  --accent: #4facfe;
+  --accent-2: #38a0ff;
+  --line: #2a3a5c;
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
 
 * {
@@ -22,9 +24,7 @@ body {
   margin: 0;
   font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Segoe UI", sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at 15% 0%, #ffffff, transparent 45%),
-    radial-gradient(circle at 85% 0%, #f1f2f5, transparent 45%),
-    var(--bg);
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-mid) 40%, var(--bg-light) 100%);
   min-height: 100vh;
   letter-spacing: -0.01em;
 }
@@ -47,7 +47,7 @@ img {
 .header {
   position: sticky;
   top: 0;
-  background: rgba(245, 245, 247, 0.85);
+  background: rgba(11, 22, 40, 0.88);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--line);
   z-index: 10;
@@ -117,7 +117,7 @@ img {
 .btn-primary {
   background: var(--accent);
   color: #ffffff;
-  box-shadow: 0 10px 20px rgba(0, 113, 227, 0.18);
+  box-shadow: 0 10px 20px rgba(79, 172, 254, 0.2);
 }
 
 .btn-primary:hover {
@@ -127,20 +127,21 @@ img {
 }
 
 .btn-secondary {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.08);
   color: var(--text);
   border: 1px solid var(--line);
 }
 
 .btn-secondary:hover {
-  background: var(--surface-2);
+  background: rgba(255, 255, 255, 0.14);
   text-decoration: underline;
 }
 
 .menu-btn {
   display: none;
   border: 1px solid var(--line);
-  background: #ffffff;
+  background: var(--surface);
+  color: var(--text);
   padding: 8px 12px;
   border-radius: 10px;
   cursor: pointer;
@@ -274,7 +275,7 @@ a.card:hover {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: rgba(0, 113, 227, 0.12);
+  background: rgba(79, 172, 254, 0.15);
   color: var(--accent);
   align-items: center;
   justify-content: center;
@@ -307,7 +308,8 @@ a.card:hover {
   padding: 12px 14px;
   border-radius: 14px;
   border: 1px solid var(--line);
-  background: #ffffff;
+  background: var(--bg);
+  color: var(--text);
   font: inherit;
   transition: border 0.2s ease, box-shadow 0.2s ease;
 }
@@ -315,8 +317,8 @@ a.card:hover {
 .form input:focus,
 .form textarea:focus {
   outline: none;
-  border-color: rgba(0, 113, 227, 0.6);
-  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.12);
+  border-color: rgba(79, 172, 254, 0.6);
+  box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.15);
 }
 
 .footer {
@@ -337,8 +339,8 @@ a.card:hover {
   border: none;
   border-radius: 999px;
   padding: 10px 16px;
-  background: var(--text);
-  color: #ffffff;
+  background: var(--accent);
+  color: #0b1628;
   font-weight: 600;
   cursor: pointer;
   box-shadow: var(--shadow);
@@ -380,7 +382,7 @@ a.card:hover {
     right: 0;
     left: 0;
     padding: 16px;
-    background: #ffffff;
+    background: var(--surface);
     border-bottom: 1px solid var(--line);
     display: none;
     flex-direction: column;
