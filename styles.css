@@ -67,6 +67,10 @@ img {
   gap: 10px;
 }
 
+.logo img {
+  border-radius: 8px;
+}
+
 .nav {
   display: flex;
   gap: 10px;
